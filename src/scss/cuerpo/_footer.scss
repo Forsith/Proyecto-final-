@@ -12,7 +12,15 @@ footer{
         justify-content: center;
         align-items: center;
         text-align: center;
-        color: beige;
+        text-decoration: none;
+        font-size: 18px;
+        a{
+            color: beige;
+        }
+        @media screen and (max-width: 1194px){
+            font-size: 10px;
+            width: 100%;
+        }       
     }
     .redes-footer{
         display: flex;
@@ -22,6 +30,9 @@ footer{
         text-align: center;
         color: beige;
         font-size: 30px;
+        @media screen and (max-width: 1194px){
+            font-size: 20px;
+        }       
     }
     .derechos-footer{
         display: flex;
@@ -30,5 +41,15 @@ footer{
         text-align: center;
         color: beige;
         font-size: 10px;
+        @media screen and (max-width: 1194px){
+            font-size: 10px;
+            width: 100%;
+        }       
     }
+    @media screen and (max-width: 792px){
+        flex-direction: column;
+        align-items:center;
+        height: 200px;
+        justify-content: space-around;
+    }       
 }
