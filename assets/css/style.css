@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: todo;
-  src: url(/assets/fuentes/Montserrat-Bold.ttf);
+  src: url(../fuentes/Montserrat-Bold.ttf);
 }
 body {
   width: 100%;
