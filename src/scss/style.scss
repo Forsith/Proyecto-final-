@@ -1,0 +1,12 @@
+/*-------PARTE PREDETERMINADA PARA EL CUERPO DE PAGINA--------*/
+@import "./cuerpo/reset";
+@import "./cuerpo/fuentes";
+@import "./cuerpo/body";
+@import "./cuerpo/header";
+@import "./cuerpo/footer";
+/*-------------PAGINA INDEX------------------*/
+@import "./Pagina-Index/main";
+/*-------------PAGINA INICIO----------------*/
+@import "./Pagina-inicio/contenedor-imagenes-inicio";
+/*-------------PAGINA PRODUCTOS-------------*/
+@import "./Pagina-productos/contenedor-productos"

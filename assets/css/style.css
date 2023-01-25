@@ -1,0 +1,363 @@
+/*-------PARTE PREDETERMINADA PARA EL CUERPO DE PAGINA--------*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: todo;
+  src: url(/assets/fuentes/Montserrat-Bold.ttf);
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: todo;
+  position: relative;
+}
+body .cuerpo {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-image: url(/assets/img/background.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body .body-secundario {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  height: 50px;
+}
+header nav {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .logo {
+  font-size: 20px;
+  color: white;
+  margin-left: 20px;
+}
+@media screen and (min-width: 768px) {
+  header nav .logo {
+    margin-left: 50px;
+  }
+}
+header nav .menu-btn {
+  font-size: 25px;
+  color: white;
+  margin-right: 20px;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  header nav .menu-btn {
+    display: none;
+  }
+}
+header nav #check {
+  display: none;
+}
+header nav #check:checked ~ .nav-menu {
+  height: 100Vh;
+}
+header nav #check:checked ~ .nav-menu li {
+  display: block;
+}
+header nav .nav-menu {
+  position: fixed;
+  right: 0;
+  width: 300px;
+  height: 0Vh;
+  top: 100px;
+  background: rgb(0, 0, 0);
+  text-align: center;
+  transition: all 0.5s;
+  border-radius: 10px 0px;
+  z-index: 1;
+}
+header nav .nav-menu li {
+  display: none;
+  line-height: 30px;
+  margin: 50px 0;
+  transition: all 0.5s;
+}
+@media screen and (min-width: 768px) {
+  header nav .nav-menu li {
+    display: inline-block;
+    line-height: 100px;
+    margin: 0px 20px;
+    transition: none;
+  }
+}
+header nav .nav-menu a {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+header nav .nav-menu a .active, header nav .nav-menu a:hover {
+  font-size: 23px;
+  color: rgb(255, 6, 6);
+  transition: 0.2s;
+}
+@media screen and (min-width: 768px) {
+  header nav .nav-menu {
+    position: relative;
+    height: 100px;
+    width: 700px;
+    top: 0;
+    background: none;
+    transition: none;
+    text-align: right;
+    margin-right: 50px;
+  }
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  height: 80px;
+  background-color: rgb(50, 56, 56);
+  text-decoration: none;
+  position: absolute;
+  bottom: -1;
+}
+footer .privacidad-footer {
+  display: flex;
+  width: 33%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: beige;
+}
+footer .redes-footer {
+  display: flex;
+  width: 33%;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  color: beige;
+  font-size: 30px;
+}
+footer .derechos-footer {
+  display: flex;
+  width: 33%;
+  align-items: center;
+  text-align: center;
+  color: beige;
+  font-size: 10px;
+}
+
+/*-------------PAGINA INDEX------------------*/
+main {
+  height: 80vh;
+  position: relative;
+  object-fit: cover;
+}
+main .banner {
+  background-color: rgba(15, 14, 14, 0.407);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  transition: 0.4s;
+  position: absolute;
+  top: 25%;
+}
+main .banner h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 2px;
+  text-align: center;
+  margin: 20px 0;
+  color: white;
+}
+main .banner h2 span {
+  color: aqua;
+}
+@media screen and (max-width: 500px) {
+  main .banner h2 {
+    font-size: 23px;
+    margin: 0px;
+  }
+}
+main .banner .titulo {
+  color: white;
+  font-weight: 700;
+  font-size: 94px;
+  line-height: 78px;
+  text-align: center;
+}
+main .banner .titulo span {
+  color: aqua;
+}
+@media screen and (max-width: 500px) {
+  main .banner .titulo {
+    font-size: 50px;
+  }
+}
+main .banner .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 210px;
+  height: 40px;
+  background: linear-gradient(90deg, #136A8A 0%, #267871 100%);
+  border-radius: 15px;
+  margin-top: 20px;
+  color: white;
+  transition: 0.5;
+}
+main .banner .btn:hover {
+  -webkit-box-shadow: 0px 0px 15px 5px #91dff4;
+  box-shadow: 0px 0px 15px 5px #86e3ff;
+}
+@media screen and (max-width: 500px) {
+  main .banner .btn {
+    width: 150px;
+    height: 20px;
+    font-size: 10px;
+  }
+}
+main .banner:hover {
+  background-color: rgba(0, 0, 0, 0.807);
+}
+@media screen and (max-width: 500px) {
+  main .banner {
+    width: 100vw;
+    height: 200px;
+  }
+}
+
+/*-------------PAGINA INICIO----------------*/
+.contenedor-imagenes-inicio {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  justify-content: center;
+}
+.contenedor-imagenes-inicio .card {
+  width: 100;
+  height: 100%;
+  position: relative;
+}
+.contenedor-imagenes-inicio .card img {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+.contenedor-imagenes-inicio .card .video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.7s;
+}
+.contenedor-imagenes-inicio .card .video:hover {
+  opacity: 1;
+}
+.contenedor-imagenes-inicio .card:hover {
+  -webkit-box-shadow: 0px 0px 15px 12px rgba(121, 253, 255, 0.6);
+  box-shadow: 0px 0px 15px 12px rgba(110, 236, 255, 0.6);
+  z-index: 1;
+}
+
+/*-------------PAGINA PRODUCTOS-------------*/
+.contenedor-productos {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+  background-color: black;
+  justify-content: center;
+}
+.contenedor-productos .tarjeta {
+  background-color: rgba(43, 235, 235, 0.087);
+  width: 300px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 1s;
+  margin: 20px;
+}
+.contenedor-productos .tarjeta .text-box {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.contenedor-productos .tarjeta .text-box h2 {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  transition: 0.5s;
+}
+.contenedor-productos .tarjeta .text-box p {
+  display: none;
+  font-size: 15px;
+  text-align: center;
+}
+.contenedor-productos .tarjeta .text-box .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
+  font-size: 20px;
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  border-radius: 12px;
+  color: white;
+}
+.contenedor-productos .tarjeta .text-box .button .comprar {
+  display: none;
+}
+.contenedor-productos .tarjeta .img-producto {
+  width: 100%;
+}
+.contenedor-productos .tarjeta .img-producto img {
+  width: 100%;
+}
+.contenedor-productos .tarjeta:hover {
+  height: 550px;
+}
+.contenedor-productos .tarjeta:hover .text-box p {
+  display: block;
+  color: white;
+}
+.contenedor-productos .tarjeta:hover .text-box h2 {
+  display: none;
+}
+.contenedor-productos .tarjeta:hover .button {
+  margin-top: 20px;
+}
+.contenedor-productos .tarjeta:hover .button .comprar {
+  display: block;
+}
+.contenedor-productos .tarjeta:hover .button .ver {
+  display: none;
+}
