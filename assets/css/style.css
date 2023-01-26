@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: todo;
-  src: url(../fuentes/Montserrat-Bold.ttf);
+  src: url(/assets/fuentes/Montserrat-Bold.ttf);
 }
 body {
   width: 100%;
@@ -276,19 +276,23 @@ main .banner:hover {
   width: 100%;
   height: 100vh;
   display: flex;
-  flex-wrap: wrap;
-  overflow: hidden;
-  justify-content: center;
+  overflow-y: auto;
+  /*overflow: hidden;*/
 }
 .contenedor-imagenes-inicio .card {
-  width: 100;
-  height: 100%;
+  width: 100%;
   position: relative;
+  object-fit: cover;
 }
 .contenedor-imagenes-inicio .card img {
   width: 100%;
   height: 100%;
   transition: 0.5s;
+}
+@media screen and (max-width: 1194px) {
+  .contenedor-imagenes-inicio .card img {
+    width: 400px;
+  }
 }
 .contenedor-imagenes-inicio .card .video {
   position: absolute;
