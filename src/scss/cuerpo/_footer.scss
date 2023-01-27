@@ -16,9 +16,12 @@ footer{
         font-size: 18px;
         a{
             color: beige;
+            @media screen and (max-width: 1194px){
+                margin-left: 15px;
+            }
         }
         @media screen and (max-width: 1194px){
-            font-size: 10px;
+            font-size: 7px;
             width: 100%;
         }       
     }
