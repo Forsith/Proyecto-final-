@@ -1,0 +1,102 @@
+.contactos{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+        .metodos{
+            width: 100%;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .mtd{
+                height: 250px;
+                padding: 30px;
+                margin-top: 30px;
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+                justify-content:space-between;
+                align-items: center;
+                i{
+                    font-size: 80px;
+                    color: white;
+                }
+                h3{
+                    color: white;
+                }
+                h2{
+                    color: white;
+                    font-size: 20px;
+                    text-align: center;
+                }
+                .direccion{
+                    font-size: 15px;
+                    text-align: center;
+                }
+            }
+            @media screen and (min-width: 1042px){
+                width: 45%;
+            }
+        }
+        .formulario{
+            height: 700px;
+            padding: 40px;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            display: none;
+            align-items: center;
+            .dato{
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                input{
+                    background-color: rgba(169, 169, 169, 0.413);
+                    width: 50%;
+                    text-align: center;
+                    height: 30px;
+                    border-radius: 12px;
+                }
+            }
+            input{
+                background-color: rgba(169, 169, 169, 0.413);
+                width: 850px;
+                text-align: center;
+                height: 30px;
+                margin: 10px;
+                border-radius: 12px;
+            }          
+            a{
+                text-align: center;
+                justify-content: center;
+                width: 50%;
+                p{
+                    background-color: rgba(169, 169, 169, 0.597);
+                    border-radius: 12px;
+                    text-decoration: none;
+                    color:aqua ;
+                    width: 500px;
+                }
+            }
+            textarea{
+                margin: 20px 0;
+                width: 100%;
+                height: 300px;
+                background-color: rgba(169, 169, 169, 0.597);
+                text-align:left;
+            }
+            ::placeholder{
+                color: aqua;
+            }
+            @media screen and (min-width: 1042px){
+                display: block;
+            }
+        }
+        @media screen and (min-width: 1042px){
+            flex-direction: row;
+            justify-content: center;
+        }
+}

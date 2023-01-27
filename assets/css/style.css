@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: todo;
-  src: url(/assets/fuentes/Montserrat-Bold.ttf);
+  src: url(../fuentes/Montserrat-Bold.ttf);
 }
 body {
   width: 100%;
@@ -34,8 +34,24 @@ body .body-secundario {
   background-size: cover;
   background-attachment: fixed;
 }
+body .body-3 {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-image: url(/assets/img/backgrounds.jpg);
+  background-position: center;
+  background-position-x: -680px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+@media screen and (min-width: 1042px) {
+  body .body-3 {
+    background-position: center;
+  }
+}
 
 header {
+  background-color: rgba(0, 0, 0, 0.52);
   height: 50px;
 }
 header nav {
@@ -403,4 +419,132 @@ main .banner:hover {
 }
 .contenedor-productos .tarjeta:hover .button .ver {
   display: none;
+}
+
+/*------------PAGINA CONTACTOS--------------*/
+.aviso-box {
+  margin-top: 200px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aviso-box h1 {
+  color: white;
+  font-size: 45px;
+}
+@media screen and (min-width: 1042px) {
+  .aviso-box {
+    height: 150px;
+  }
+}
+
+.contactos {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.contactos .metodos {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactos .metodos .mtd {
+  height: 250px;
+  padding: 30px;
+  margin-top: 30px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.contactos .metodos .mtd i {
+  font-size: 80px;
+  color: white;
+}
+.contactos .metodos .mtd h3 {
+  color: white;
+}
+.contactos .metodos .mtd h2 {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+.contactos .metodos .mtd .direccion {
+  font-size: 15px;
+  text-align: center;
+}
+@media screen and (min-width: 1042px) {
+  .contactos .metodos {
+    width: 45%;
+  }
+}
+.contactos .formulario {
+  height: 700px;
+  padding: 40px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  display: none;
+  align-items: center;
+}
+.contactos .formulario .dato {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.contactos .formulario .dato input {
+  background-color: rgba(169, 169, 169, 0.413);
+  width: 50%;
+  text-align: center;
+  height: 30px;
+  border-radius: 12px;
+}
+.contactos .formulario input {
+  background-color: rgba(169, 169, 169, 0.413);
+  width: 850px;
+  text-align: center;
+  height: 30px;
+  margin: 10px;
+  border-radius: 12px;
+}
+.contactos .formulario a {
+  text-align: center;
+  justify-content: center;
+  width: 50%;
+}
+.contactos .formulario a p {
+  background-color: rgba(169, 169, 169, 0.597);
+  border-radius: 12px;
+  text-decoration: none;
+  color: aqua;
+  width: 500px;
+}
+.contactos .formulario textarea {
+  margin: 20px 0;
+  width: 100%;
+  height: 300px;
+  background-color: rgba(169, 169, 169, 0.597);
+  text-align: left;
+}
+.contactos .formulario ::placeholder {
+  color: aqua;
+}
+@media screen and (min-width: 1042px) {
+  .contactos .formulario {
+    display: block;
+  }
+}
+@media screen and (min-width: 1042px) {
+  .contactos {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
